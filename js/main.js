@@ -202,4 +202,30 @@ window.addEventListener('DOMContentLoaded', function () {
   //   };
   // });
 
+      //    мобильное меню
+    // ######################################################################
+
+    let menuLink = $('.menu-mobile-btn');
+    let menu = $('.menu-mobile');
+    let close = $('.menu-mobile-close');
+    let navLink = $('.menu-mobile-link');
+
+    menuLink.click(function () {
+        menu.toggleClass('active-menu');
+    });
+    close.click(function () {
+        menu.toggleClass('active-menu');
+    });
+
+
+
+    $('.menu-mobile-link').click(function (event) {
+        event.preventDefault();
+        let target = $(this).attr('href');
+        let top = $(target).offset().top;
+        $('html, body').animate({
+            scrollTop: top
+        }, 500);
+    });
+
 });
