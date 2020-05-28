@@ -108,3 +108,22 @@
 .slider__carousel_adaptive {
     display: none;
 }
+.slider__btn_right:hover {
+    background: $main-color;
+}
+.slider__btn_left:hover {
+    background: $main-color;
+}
+
+.slider__btn_right:hover .arrow-right {
+    background: #fff;
+}
+.slider__btn_right:hover .arrow-right::after {
+    border-color: transparent #fff;
+}
+.slider__btn_left:hover .arrow-left {
+    background: #fff;
+}
+.slider__btn_left:hover .arrow-left::after {
+    border-color: transparent #fff;
+}

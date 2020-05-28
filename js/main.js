@@ -106,51 +106,51 @@ window.addEventListener('DOMContentLoaded', function () {
   //    кнопки слайдера
   // ######################################################################
 
-  let arrowRight = document.querySelectorAll('.arrow-right'),
-    arrowRightAft = window.getComputedStyle(document.querySelector('.arrow-right'), ':after'),
-    arrowLeft = document.querySelectorAll('.arrow-left'),
-    itemNav = document.querySelectorAll('.slider__btn'),
-    itemNavActive = document.querySelectorAll('.slider__btn-active'),
-    itemNavImg = document.querySelectorAll('.slider__img'),
-    itemNavImgActive = document.querySelectorAll('.slider__img-active');
+  // let arrowRight = document.querySelectorAll('.arrow-right'),
+  //   arrowRightAft = window.getComputedStyle(document.querySelector('.arrow-right'), ':after'),
+  //   arrowLeft = document.querySelectorAll('.arrow-left'),
+  //   itemNav = document.querySelectorAll('.slider__btn'),
+  //   itemNavActive = document.querySelectorAll('.slider__btn-active'),
+  //   itemNavImg = document.querySelectorAll('.slider__img'),
+  //   itemNavImgActive = document.querySelectorAll('.slider__img-active');
 
 
-  function activeMenuNav(a) {
-    itemNav[a].classList.add('hide');
-    itemNav[a].classList.remove('show');
-    itemNavActive[a].classList.remove('hide');
-    itemNavActive[a].classList.add('show');
-    arrowRight.style.cssText = `background: linear-gradient(to right, #fd712c, #f21780);`;
-  }
+  // function activeMenuNav(a) {
+  //   itemNav[a].classList.add('hide');
+  //   itemNav[a].classList.remove('show');
+  //   itemNavActive[a].classList.remove('hide');
+  //   itemNavActive[a].classList.add('show');
+  //   arrowRight.style.cssText = `background: linear-gradient(to right, #fd712c, #f21780);`;
+  // }
 
-  function noActiveMenuNav(b) {
-    itemNav[b].classList.remove('hide');
-    itemNav[b].classList.add('show');
-    itemNavActive[b].classList.remove('show');
-    itemNavActive[b].classList.add('hide');
+  // function noActiveMenuNav(b) {
+  //   itemNav[b].classList.remove('hide');
+  //   itemNav[b].classList.add('show');
+  //   itemNavActive[b].classList.remove('show');
+  //   itemNavActive[b].classList.add('hide');
 
-  }
-  document.addEventListener('mouseover', (event) => {
-    let target = event.target;
-    if (target && target.classList.contains('slider__img') || target && target.classList.contains('slider__btn') || target && target.classList.contains('slider__img-active')) {
-      for (let i = 0; i < itemNav.length; i++) {
-        if (target == itemNav[i] || target == itemNavActive[i] || target == itemNavImg[i] || target == itemNavImgActive[i]) {
-          activeMenuNav(i)
-        };
-      };
-    };
-  });
+  // }
+  // document.addEventListener('mouseover', (event) => {
+  //   let target = event.target;
+  //   if (target && target.classList.contains('slider__img') || target && target.classList.contains('slider__btn') || target && target.classList.contains('slider__img-active')) {
+  //     for (let i = 0; i < itemNav.length; i++) {
+  //       if (target == itemNav[i] || target == itemNavActive[i] || target == itemNavImg[i] || target == itemNavImgActive[i]) {
+  //         activeMenuNav(i)
+  //       };
+  //     };
+  //   };
+  // });
 
-  document.addEventListener('mouseout', (event) => {
-    let target = event.target;
-    if (target && target.classList.contains('slider__btn-active')) {
-      for (let i = 0; i < itemNavActive.length; i++) {
-        if (target == itemNavActive[i]) {
-          noActiveMenuNav(i)
-        };
-      };
-    };
-  });
+  // document.addEventListener('mouseout', (event) => {
+  //   let target = event.target;
+  //   if (target && target.classList.contains('slider__btn-active')) {
+  //     for (let i = 0; i < itemNavActive.length; i++) {
+  //       if (target == itemNavActive[i]) {
+  //         noActiveMenuNav(i)
+  //       };
+  //     };
+  //   };
+  // });
 
   //    видео
   // ######################################################################
@@ -177,19 +177,19 @@ window.addEventListener('DOMContentLoaded', function () {
   //    цена
   // ######################################################################
 
-  let offer = document.querySelectorAll('.offer'),
-    offerPrice = document.querySelectorAll('.offer__price'),
-    offerPriceBefore = document.querySelectorAll('.offer__price::before'),
-    // offerPriceBefore = getComputedStyle('.offer__price', ':before'),
-    btnOffer = document.querySelectorAll('.button_offer');
+  // let offer = document.querySelectorAll('.offer'),
+  //   offerPrice = document.querySelectorAll('.offer__price'),
+  //   offerPriceBefore = document.querySelectorAll('.offer__price::before'),
+  //   // offerPriceBefore = getComputedStyle('.offer__price', ':before'),
+  //   btnOffer = document.querySelectorAll('.button_offer');
 
 
 
-  function activeStyle(a) {
-    offerPrice[a].style.cssText = `background: linear-gradient(to right, #fd712c, #f21780);
-    color: #fff;`;
-    offerPriceBefore[a].style.cssText = `background: linear-gradient(to right, #fd712c, #f21780);`;
-  }
+  // function activeStyle(a) {
+  //   offerPrice[a].style.cssText = `background: linear-gradient(to right, #fd712c, #f21780);
+  //   color: #fff;`;
+  //   offerPriceBefore[a].style.cssText = `background: linear-gradient(to right, #fd712c, #f21780);`;
+  // }
 
   // document.addEventListener('mouseover', (event) => {
   //   let target = event.target;
