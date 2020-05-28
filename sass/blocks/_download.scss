@@ -1,0 +1,41 @@
+.download {
+    background: $main-color;
+    padding: 119px 50px 120px 50px;
+
+    &__wrapper {
+        @include flex-box ();
+        
+    }
+}
+
+.oc {
+    @include btn-use ();
+    @include flex-box ();
+    justify-content: start;
+    border: none;
+    width: 360px;
+    border-radius: 3px;
+    box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.07);
+    background-color: #ffffff;
+    margin-right: 20px;
+    padding: 30px 0 32px 32px;;
+    &:nth-child(3) {
+        margin-right: 0;
+    }
+    img {
+        display: block;
+        margin-right: 46px;
+    }
+    &__inner {
+        width: 155px;
+    }
+    &__title {
+        font-family: 'Dosis', 'Arial', sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 0.8;
+        text-align: left;
+        color: #222222;
+        margin-bottom: 14px;
+    }
+}

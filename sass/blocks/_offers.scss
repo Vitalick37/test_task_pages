@@ -1,0 +1,122 @@
+.offers {
+    padding: 118px 20px 120px 20px;
+
+    &__wrapper {
+        @include flex-box ();
+    }
+}
+
+.offer {
+    background-color: #f7fafc;
+
+    &__title {
+        font-family: 'Dosis', 'Arial', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.2;
+        text-align: center;
+        color: #333333;
+        margin-top: 15px;
+        margin-bottom: 18px;
+    }
+
+
+    // &__price {
+    //     font-family: 'Dosis', 'Arial', sans-serif;
+    //     font-size: 48px;
+    //     font-weight: 500;
+    //     text-align: center;
+    //     color: #333333;
+    //     height: 80px;
+    //     width: 262px;
+    //     background: #fff;
+    //     position: relative;
+    //     margin-bottom: 80px;
+
+    //     span {
+    // position: absolute;
+    //     font-size: 28px;
+    //     left: 50px;
+    //     bottom: 30px;
+    // }
+
+    // &:hover {
+    //     background: $main-color;
+    //     color: #fff;
+
+    // &::before {
+    //     content: "";
+    //     height: 0;
+    //     width: 0;
+    //     position: absolute;
+    //     left: 0;
+    //     top: 80px;
+    //     border-top: 40px solid #fff;
+    //     border-image: $main-color;
+    //     border-image-slice: 1;
+    //     border-left: 131px solid transparent;
+    //     border-right: 131px solid transparent;
+    // }
+    // }
+
+    // &::before {
+    //     content: "";
+    //     height: 0;
+    //     width: 0;
+    //     position: absolute;
+    //     left: 0;
+    //     top: 80px;
+    //     border-top: 40px solid #fff;
+    //     border-left: 131px solid transparent;
+    //     border-right: 131px solid transparent;
+    // }
+    // }
+
+    &__deg {
+        // -webkit-clip-path: polygon(0px 80px,131px 120px,262px 80px,262px 0px,0px 0px);
+        // clip-path: polygon(0px 80px,131px 120px,262px 80px,262px 0px,0px 0px);
+        clip-path: polygon(0 0, 100% 0, 100% 66%, 50% 100%, 0 66%);
+        font-family: 'Dosis', 'Arial', sans-serif;
+        font-size: 48px;
+        font-weight: 500;
+        text-align: center;
+        color: #333333;
+        height: 120px;
+        width: 262px;
+        background: #fff;
+        position: relative;
+        margin-bottom: 80px;
+        padding-top: 10px;
+
+        &:hover {
+            background: $main-color;
+            color: #fff;
+
+        }
+        span {
+            position: absolute;
+            font-size: 28px;
+            left: 10%;
+            top: 15%; 
+        }
+
+    }
+
+    &__menu {
+        @include ul-style ();
+        margin-bottom: 30px;
+    }
+
+    &__free {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        text-align: center;
+        color: #aaaaaa;
+        margin-bottom: 14px;
+    }
+}

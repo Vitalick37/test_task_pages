@@ -1,0 +1,110 @@
+#carousel {
+    max-width: 800px;
+    height: 300px;
+    display: relative;
+}
+
+#carousel img {
+    display: hidden;
+    /* hide images until carousel prepares them */
+    cursor: pointer;
+    /* not needed if you wrap carousel items in links */
+}
+
+.slider {
+    padding: 119px 0 120px 0;
+
+    // margin-top: 140px;
+    // margin-left: 20px;
+    &__carousel {
+        min-height: 510px;
+        position: relative;
+    }
+
+    &__btn {
+        @include btn-use ();
+        width: 40px;
+        height: 40px;
+        border: solid 1px #eeeeee;
+        border-radius: 50%;
+        background-color: #ffffff;
+        position: absolute;
+        &-active {
+            background: $main-color; 
+            @include btn-use ();
+            width: 40px;
+            height: 40px;
+            border: solid 1px #eeeeee;
+            border-radius: 50%;
+            position: absolute;
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+            
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        &_left {
+            top: 25%;
+            left: 0;
+
+            &_bottom {
+                left: -10%;
+                img {
+                    background-image: url('../../img/slider/arrowL.png no-repeat');
+                    display: block;
+                    margin: 0 auto;
+                }
+                &:hover {
+                    background: $main-color; 
+                    img {
+                        background-image: url('../../img/slider/arrowR2.png no-repeat');
+                        z-index: 1000;
+                        display: block;
+                        margin: 0 auto;
+                        
+                        }
+                }
+            }
+        }
+        
+
+        &_right {
+            top: 25%;
+            right: 0;
+
+            &_bottom {
+                right: -10%;
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    background-image: url('../../img/slider/arrowL2.png no-repeat');
+                }
+                &:hover {
+                    background: $main-color; 
+                    img {
+                    background-image: url('../../img/slider/arrowR.png no-repeat');
+                    z-index: 100;
+                    display: block;
+                    margin: 0 auto;
+                    filter: url(../../img/slider/arrowR.png);
+                    }
+                }
+               
+            }
+        }
+    }
+}
+
+.carousel {
+    margin: 0 auto;
+    margin-top: 15%;
+}
+.slider__carousel_adaptive {
+    display: none;
+}

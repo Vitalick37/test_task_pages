@@ -1,0 +1,53 @@
+.header {
+    @include flex-box ();
+    margin-bottom: 149px;
+
+    &__menu {
+        @include ul-style ();
+        @include flex-box ();
+    }
+
+    &__item {
+        // padding-right: 36px;
+        // padding-left: 36px;
+        // display: block;
+
+        &-active {
+            // display: none;
+            padding-right: 36px;
+            padding-left: 36px;
+            border-radius: 17.5px;
+            background-color: #ffffff;
+            cursor: pointer;
+        }
+    }
+
+    &__link {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.71;
+        color: #ffffff;
+        padding-right: 36px;
+        padding-left: 36px;
+        
+        &_nav {
+            @include link-use-nav ();
+            &:active {
+                box-shadow: 3px 3px 20px #ffffff;
+            }
+        }
+
+        &_reason {
+            color: #777777;
+            background: url(../../img/icon/black.png) no-repeat left 50%;
+            padding-left: 35px;
+
+            &:hover {
+                color: #777777;
+                text-decoration: none;
+            }
+        }
+    }
+
+}

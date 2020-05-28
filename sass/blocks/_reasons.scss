@@ -1,0 +1,38 @@
+.reasons {
+    padding: 120px 50px 101px 50px;
+    &__wrapper {
+        @include flex-box ();
+        // flex-wrap: wrap;
+    }
+    &__iphone {
+        display: block;
+    }
+    &__title {
+        font-family: 'Dosis', 'Arial', sans-serif;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 0.83;
+        text-align: left;
+        color: #222222;
+        margin-bottom: 79px;
+        &_slider {
+            text-align: center;
+            margin-bottom: 31px;
+        }
+        &_offers {
+            text-align: center;
+            margin-bottom: 23px;
+        }
+        &_clients {
+            text-align: center;
+            margin-bottom: 23px;
+        }
+        &_download {
+            text-align: center;
+            margin-bottom: 80px; 
+        }
+    }
+}
+.reason {
+    @include ul-style ();
+}

@@ -1,0 +1,7 @@
+.advantages {
+    padding: 120px 0 101px 0;
+    &__wrapper {
+        @include flex-box ();
+        flex-wrap: wrap;
+    }
+}

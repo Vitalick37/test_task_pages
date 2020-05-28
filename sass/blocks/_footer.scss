@@ -1,0 +1,30 @@
+.footer {
+    padding: 58px 0;
+    background-color: #222222;
+}
+.social {
+    @include flex-box ();
+    justify-content: center;
+    margin-bottom: 31px;
+    &__icon {
+        display: block;
+        margin-right: 29px;
+        &:nth-child(4) {
+            margin-right: 0;
+        }
+    }
+} 
+.copyright {
+    font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.71;
+  text-align: center;
+  color: #ffffff;
+  span {
+    text-transform: uppercase;
+    border-left: 1px solid #fff;
+    padding-left: 8px;
+    margin-left: 4px;
+  }
+}

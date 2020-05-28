@@ -1,0 +1,46 @@
+// @include btn-use ();
+
+@mixin btn-use () {
+    outline: none;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+}
+
+// @mixin btn-mini-use () {
+//     outline: none;
+//     &:focus {
+//         outline: none;  
+//     }     
+// }
+
+@mixin link-use () {
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+@mixin link-use-nav () {
+    &:hover {
+        padding: 11px 36px;
+        border-radius: 17.5px;
+        background-color: #ffffff;
+        text-decoration: none;
+        color: #222222;
+        
+    }
+}
+
+@mixin flex-box () {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin ul-style () {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}

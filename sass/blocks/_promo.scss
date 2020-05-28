@@ -1,0 +1,113 @@
+.promo {
+    background: $main-color;
+    padding: 48px 50px 219px 50px;
+
+    &__inner {
+        position: relative;
+    }
+
+    &__img {
+        position: absolute;
+        top: 146px;
+        right: 0;
+        max-width: 620px;
+        
+    }
+
+    &__title {
+        width: 480px;
+        font-family: 'Dosis', 'Arial', sans-serif;
+        font-size: 54px;
+        font-weight: 600;
+        line-height: 1.11;
+        text-align: left;
+        color: #ffffff;
+        margin-bottom: 24px;
+    }
+
+    &__descr {
+        width: 490px;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.71;
+        text-align: left;
+        color: #ffffff;
+        margin-bottom: 24px;
+
+        &_advantage {
+            color: #777777;
+            max-width: 258px;
+            margin-bottom: 0;
+        }
+
+        &_reasons {
+            color: #777777;
+            width: 512px;
+            margin-bottom: 37px;
+        }
+
+        &_slider {
+            color: #777777;
+            text-align: center;
+            display: block;
+            width: 656px;
+            margin: 0 auto;
+            margin-bottom: 80px;
+        }
+
+        &_offers {
+            color: #777777;
+            text-align: center;
+            display: block;
+            width: 656px;
+            margin: 0 auto;
+            margin-bottom: 80px;
+        }
+
+        &_offer {
+            text-align: center;
+            color: #777777;
+            width: 123px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            
+        }
+
+        &_clients {
+            color: #777777;
+            text-align: center;
+            display: block;
+            width: 656px;
+            margin: 0 auto;
+            margin-bottom: 80px; 
+        }
+        &_client {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.71;
+            text-align: left;
+            color: #777777;
+            width: 268px;
+            margin-bottom: 29px;
+
+        }
+        &_oc {
+            width: 160px;
+            text-align: left;
+            color: #777777;
+            margin-bottom: 0;
+        }
+    }
+
+    &__menu {
+        @include ul-style ();
+        margin-bottom: 40px;
+    }
+
+    &__item {
+        background: url(../../img/icon/white.png) no-repeat left 50%;
+        padding-left: 35px;
+    }
+}
